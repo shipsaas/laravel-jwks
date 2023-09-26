@@ -5,6 +5,8 @@
 
 Provide libraries to help you deal with JSON Web Key Sets (JWKS) in Laravel 😉
 
+Documentation: [ShipSaaS Laravel JWKS](https://laravel-jwks.shipsaas.tech)
+
 ## Supports
 - Laravel 10+
 - PHP 8+
