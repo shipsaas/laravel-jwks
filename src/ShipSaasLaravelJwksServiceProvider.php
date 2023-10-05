@@ -9,12 +9,14 @@ use Strobotti\JWK\KeyFactory;
 
 class ShipSaasLaravelJwksServiceProvider extends ServiceProvider
 {
+    const VERSION = 'v1.0.0';
+
     public function boot(): void
     {
         if ($this->app->runningInConsole()) {
             AboutCommand::add(
                 'ShipSaaS: Laravel JSON Web Key Sets',
-                fn () => ['Version' => 'v1.0.0']
+                fn () => ['Version' => static::VERSION]
             );
         }
 
@@ -22,6 +24,10 @@ class ShipSaasLaravelJwksServiceProvider extends ServiceProvider
             __DIR__ . '/Configs/jwks.php',
             'jwks'
         );
+
+        $this->publishes([
+            __DIR__ . '/Configs/jwks.php' => config_path('jwks.php'),
+        ], 'laravel-jwks');
 
         $this->loadRoutesFrom(__DIR__ . '/Routes/jwks_routes.php');
     }

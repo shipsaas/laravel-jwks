@@ -21,7 +21,7 @@ return [
      *
      * Note: we only support RSA for now
      */
-    'algorithm' => env('JWT_ALGORITHM', 'RS256'),
+    'default_algorithm' => env('JWT_ALGORITHM', 'RS256'),
 
     /**
      * The paths of public keys used to generate & sign the JWT token
