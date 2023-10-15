@@ -14,9 +14,9 @@ Documentation: [ShipSaaS Laravel JWKS](https://laravel-jwks.shipsaas.tech)
 
 ## Sample use cases
 
-Ever thinking of microservices? One of the biggest challenges is having the Authentication (& Authorization) service.
+Ever thought of microservices? One of the biggest challenges is having the Authentication (& Authorization) service.
 
-However, you don't have to spend enormous time to build a brand new AuthService and migrate the current users.
+However, you don't have to spend enormous time building a brand new AuthService and migrating the current users.
 
 Your current app = the core, the heart of everything. Let's build satellite services around that.
 
@@ -41,7 +41,6 @@ Export config
 
 ```bash
 php artisan vendor:publish --tag=laravel-inbox-process
-php artisan migrate
 ```
 
 ## Documentation & Usage
