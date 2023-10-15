@@ -58,7 +58,7 @@ class Key implements Arrayable, Stringable
         return $keyInstance;
     }
 
-    public function toJWK()
+    public function toJWK(): array
     {
         return app(KeyFactory::class)
             ->createFromPem($this->key, array_filter([
