@@ -1,7 +1,7 @@
 # ShipSaaS - Laravel JSON Web Key Sets (JWKS)
 
-[![Build & Test (MySQL & PgSQL)](https://github.com/shipsaas/laravel-inbox-process/actions/workflows/build.yml/badge.svg)](https://github.com/shipsaas/laravel-inbox-process/actions/workflows/build.yml)
-[![codecov](https://codecov.io/gh/shipsaas/laravel-inbox-process/graph/badge.svg?token=3Z1X9S69C4)](https://codecov.io/gh/shipsaas/laravel-inbox-process)
+[![Build & Test (PHP 8.2)](https://github.com/shipsaas/laravel-jwks/actions/workflows/build.yml/badge.svg)](https://github.com/shipsaas/laravel-jwks/actions/workflows/build.yml)
+[![codecov](https://codecov.io/gh/shipsaas/laravel-jwks/graph/badge.svg?token=c0HREpn8kp)](https://codecov.io/gh/shipsaas/laravel-jwks)
 
 Provide libraries to help you deal with JSON Web Key Sets (JWKS) in Laravel 😉
 
