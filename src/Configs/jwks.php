@@ -17,6 +17,16 @@ return [
     'use_default_jwks_route' => true,
 
     /**
+     * The middleware that you want to apply before accessing the handler
+     *
+     * This would come in handy if you want to have your own custom authentication (basic token or something)
+     */
+    'default_jwks_route_middlewares' => [
+        // 'base_auth',
+        // AuthMiddleware::class,
+    ],
+
+    /**
      * The JWT Algorithm of your current application
      *
      * Note: we only support RSA for now

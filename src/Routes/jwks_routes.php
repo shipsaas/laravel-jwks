@@ -4,5 +4,6 @@ use Illuminate\Support\Facades\Route;
 use ShipSaasLaravelJwks\Http\Controllers\JwksController;
 
 if (config('jwks.use_default_jwks_route')) {
-    Route::get('auth/jwks', [JwksController::class, 'index']);
+    Route::get('auth/jwks', [JwksController::class, 'index'])
+        ->middleware(config('jwks.default_jwks_route_middlewares'));
 }

@@ -14,17 +14,20 @@ Documentation: [ShipSaaS Laravel JWKS](https://laravel-jwks.shipsaas.tech)
 
 ## Sample use cases
 
-Ever thinking of microservices? One of the biggest challenges is the Authentication & Authorization.
+Ever thinking of microservices? One of the biggest challenges is having the Authentication (& Authorization) service.
 
 However, you don't have to spend enormous time to build a brand new AuthService and migrate the current users.
 
 Your current app = the core, the heart of everything. Let's build satellite services around that.
 
-< diagram here >
+![laravel-jwks-diagram.png](.github/laravel-jwks-diagram.png)
 
-With JWKS, satellite services can simply verify the signed JWT token before handling the actual requests.
+With (Laravel) JWKS, we will have:
 
-JWKS is supported in multiple languages e.g.: Node.js, go,...
+- The main app exposes the JWKs internally for the satellite microservices.
+- The satellite services can simply obtain the JWKs and verify the signed JWT token before handling the actual requests.
+
+JWKS is supported in multiple languages e.g.: Node.js, Go,...
 
 ## Installation
 
