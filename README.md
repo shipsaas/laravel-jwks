@@ -40,7 +40,7 @@ composer require shipsaas/laravel-jwks
 Export config 
 
 ```bash
-php artisan vendor:publish --tag=laravel-inbox-process
+php artisan vendor:publish --tag=laravel-jwks
 ```
 
 ## Documentation & Usage
